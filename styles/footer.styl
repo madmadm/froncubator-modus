@@ -1,0 +1,173 @@
+content-width = 65%
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+body
+	footer
+		width 100%
+		overflow auto
+		height auto
+		background-color #76c7c0
+		.footer-ruler
+			width 100%
+			height 23px
+			background url('../images/ruler-g-big.jpg') center repeat-x
+		.main-footer-info
+			width content-width
+			margin 0 auto
+			margin-top 20px
+			overflow auto
+			height auto
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content space-between
+			> div
+				margin-right 15px
+			.logo-text-contacts
+				width 29%
+				display flex
+				flex-direction column
+				flex-wrap nowrap
+				overflow auto
+				height auto
+				color #ffffff
+				order 1
+				> div
+					width 100%
+				.logo
+					font-family OpenSans
+					display inline-block
+					vertical-align middle
+					margin-bottom 15px
+					div
+						display inline-block
+						vertical-align middle
+					.modus
+						font-family OpenSans-Extrabold
+						font-size 30px
+						text-transform uppercase
+					.versus
+						font-size 25px
+				.text
+					font-family OpenSans
+					font-size 13px
+					line-height 20px
+					margin-bottom 20px
+				.phone
+					margin-bottom 20px
+					.text
+						font-family OpenSans
+						font-size 13px
+						margin-right 15px
+					.number
+						font-family OpenSans-SemiboldItalic
+						font-size 20px
+				.e-mail
+					.text
+						font-family OpenSans
+						font-size 13px
+						margin-right 15px
+					.address
+						font-family OpenSans-SemiboldItalic
+						font-size 20px
+			.company
+			.community
+				.title
+					font-family OpenSans-Semibold
+					font-size 20px
+					color #497e79
+					margin-bottom 20px
+				.list
+					list-style none
+					color #ffffff
+					li
+						padding-left: 1em;
+						text-indent: -1em;
+						font-family OpenSans
+						font-size 13px
+						line-height 25px
+					li:before
+						content ">"
+						padding-right 5px
+			.company
+				order 2
+			.community
+				order 3
+			.from-blog
+				order 4
+				.title
+					color #ffffff
+					.from
+						font-size 20px
+						font-family OpenSans-Italic
+					.blog
+						font-size 20px
+						font-family OpenSans-Bold
+						text-transform uppercase
+				.post
+					clear both
+					font-family OpenSans
+					font-size 13px
+					margin-top 24px
+					margin-bottom 38px
+					.picture
+						background #5e9f9a url('../images/alt-image.png') center no-repeat
+						width 70px
+						height 70px
+						border-radius 5px
+						float left
+						margin-right 10px
+					.text
+						color #ffffff
+					.date
+						color #497e79
+		.footer-social
+			width 100%
+			height 50px
+			background-color #6ab3ac
+			overflow auto
+			height auto
+			.footer-wrapper
+				width content-width
+				margin 0 auto
+				display flex
+				flex-wrap wrap
+				justify-content space-between
+				> div
+					line-height 50px
+					vertical-align middle
+				.copyright
+					color #ffffff
+					width 107px
+					// display inline-block
+					font-family OpenSans
+					font-size 12px
+				.social
+					// float right
+					width 162px
+					display flex
+					flex-direction row
+					justify-content flex-end
+					margin-top 15px
+					> div
+						margin-left 20px
+					.fb
+						width 15px
+						height 23px
+						background url('../images/social.png') 0px no-repeat
+					.gg
+						width 25px
+						height 23px
+						background url('../images/social.png') -39px no-repeat
+					.tw
+						width 20px
+						height 23px
+						background url('../images/social.png') -86px no-repeat
+					.rss
+						width 23px
+						height 23px
+						background url('../images/social.png') -129px no-repeat
