@@ -8,31 +8,33 @@ content-width = 65%
 body
 	min-width 320px
 	.scroll-block
+		color #ffffff
+		position relative
+		.scroll-left
+		.scroll-right
+			position absolute
+			font-family FontAwesome
+			font-size 40px
+			padding 2px 12px 10px 12px
+			margin-top 245px
+			background-color #e8645a
+			border-radius 0 5px 5px 0
+			cursor pointer
+		.scroll-right
+			right 0px
+			border-radius 5px 0 0 5px
+		.scroll-left
+			left 0px
 		.scroll-data
 			width 100%
 			height 500px
 			background-color #7f8c8c
-			color #ffffff
 			display inline-block
-			.scroll-left
-			.scroll-right
-				font-family FontAwesome
-				font-size 40px
-				float left
-				padding 2px 12px 10px 12px
-				margin-top 245px
-				background-color #e8645a
-				border-radius 0 5px 5px 0
-				cursor pointer
-			.scroll-right
-				float right
-				border-radius 5px 0 0 5px
 			.scroll-item
 				display flex
 				flex-direction column
 				align-items center
 				margin-top 162px
-				cursor pointer
 				span
 					border-radius 5px
 					padding-left 10px
@@ -43,6 +45,7 @@ body
 					font-size 50px
 					font-family OpenSans-Extrabold
 					margin-bottom 10px
+					cursor pointer
 				.text
 					background-color #3f4646
 					width 470px
@@ -50,6 +53,7 @@ body
 					font-family OpenSans
 					text-align center
 					padding 10px 20px 10px 20px
+					cursor pointer
 		.scroll-pointer
 			width 100%
 			height 50px
