@@ -321,8 +321,11 @@ body {
   min-width: 320px;
 }
 body .scroll-block {
+  width: 100%;
+  overflow: hidden;
   color: #fff;
   position: relative;
+  height: 550px;
 }
 body .scroll-block .scroll-left,
 body .scroll-block .scroll-right {
@@ -342,24 +345,30 @@ body .scroll-block .scroll-right {
 body .scroll-block .scroll-left {
   left: 0px;
 }
-body .scroll-block .scroll-data {
+body .scroll-block .scroller {
+  height: 100%;
+  position: absolute;
+  z-index: -20;
+}
+body .scroll-block .scroller .scroll-data {
+  position: relative;
   width: 100%;
   height: 500px;
-  background-color: #7f8c8c;
   display: inline-block;
+  z-index: -10;
 }
-body .scroll-block .scroll-data .scroll-item {
+body .scroll-block .scroller .scroll-data .scroll-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 162px;
 }
-body .scroll-block .scroll-data .scroll-item span {
+body .scroll-block .scroller .scroll-data .scroll-item span {
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
-body .scroll-block .scroll-data .scroll-item .title {
+body .scroll-block .scroller .scroll-data .scroll-item .title {
   text-transform: uppercase;
   background-color: #e2534b;
   font-size: 50px;
@@ -367,7 +376,7 @@ body .scroll-block .scroll-data .scroll-item .title {
   margin-bottom: 10px;
   cursor: pointer;
 }
-body .scroll-block .scroll-data .scroll-item .text {
+body .scroll-block .scroller .scroll-data .scroll-item .text {
   background-color: #3f4646;
   width: 470px;
   font-size: 16px;
@@ -376,7 +385,18 @@ body .scroll-block .scroll-data .scroll-item .text {
   padding: 10px 20px 10px 20px;
   cursor: pointer;
 }
+body .scroll-block .scroller .scroll-data-1 {
+  background-color: #7f8c8c;
+}
+body .scroll-block .scroller .scroll-data-2 {
+  background-color: #f00;
+}
+body .scroll-block .scroller .scroll-data-3 {
+  background-color: #ff0;
+}
 body .scroll-block .scroll-pointer {
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   height: 50px;
   display: flex;

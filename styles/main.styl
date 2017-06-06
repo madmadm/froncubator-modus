@@ -8,8 +8,11 @@ content-width = 65%
 body
 	min-width 320px
 	.scroll-block
+		width 100%
+		overflow hidden
 		color #ffffff
 		position relative
+		height 550px
 		.scroll-left
 		.scroll-right
 			position absolute
@@ -25,36 +28,49 @@ body
 			border-radius 5px 0 0 5px
 		.scroll-left
 			left 0px
-		.scroll-data
-			width 100%
-			height 500px
-			background-color #7f8c8c
-			display inline-block
-			.scroll-item
-				display flex
-				flex-direction column
-				align-items center
-				margin-top 162px
-				span
-					border-radius 5px
-					padding-left 10px
-					padding-right 10px
-				.title
-					text-transform uppercase
-					background-color #e2534b
-					font-size 50px
-					font-family OpenSans-Extrabold
-					margin-bottom 10px
-					cursor pointer
-				.text
-					background-color #3f4646
-					width 470px
-					font-size 16px
-					font-family OpenSans
-					text-align center
-					padding 10px 20px 10px 20px
-					cursor pointer
+		.scroller
+			height 100%
+			position absolute
+			z-index -20
+			.scroll-data
+				position relative
+				width 100%
+				height 500px
+				display inline-block
+				z-index -10
+				.scroll-item
+					display flex
+					flex-direction column
+					align-items center
+					margin-top 162px
+					span
+						border-radius 5px
+						padding-left 10px
+						padding-right 10px
+					.title
+						text-transform uppercase
+						background-color #e2534b
+						font-size 50px
+						font-family OpenSans-Extrabold
+						margin-bottom 10px
+						cursor pointer
+					.text
+						background-color #3f4646
+						width 470px
+						font-size 16px
+						font-family OpenSans
+						text-align center
+						padding 10px 20px 10px 20px
+						cursor pointer
+			.scroll-data-1
+				background-color #7f8c8c
+			.scroll-data-2
+				background-color red
+			.scroll-data-3
+				background-color yellow
 		.scroll-pointer
+			position absolute
+			bottom 0px
 			width 100%
 			height 50px
 			display flex
