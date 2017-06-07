@@ -317,6 +317,9 @@ body header .header-ruller {
   padding: 0;
   box-sizing: border-box;
 }
+.highlighted {
+  border-bottom: 5px solid #e8645a !important;
+}
 body {
   min-width: 320px;
 }
@@ -347,6 +350,8 @@ body .scroll-block .scroll-left {
 }
 body .scroll-block .scroller {
   height: 100%;
+  display: flex;
+  flex-direction: row;
   position: absolute;
   z-index: -20;
 }
@@ -387,12 +392,19 @@ body .scroll-block .scroller .scroll-data .scroll-item .text {
 }
 body .scroll-block .scroller .scroll-data-1 {
   background-color: #7f8c8c;
+  order: 1;
 }
 body .scroll-block .scroller .scroll-data-2 {
   background-color: #f00;
+  order: 2;
 }
 body .scroll-block .scroller .scroll-data-3 {
   background-color: #ff0;
+  order: 3;
+}
+body .scroll-block .scroller .scroll-data-4 {
+  background-color: #00f;
+  order: 4;
 }
 body .scroll-block .scroll-pointer {
   position: absolute;
@@ -405,7 +417,7 @@ body .scroll-block .scroll-pointer {
   justify-content: center;
   background-color: #f3f3f3;
 }
-body .scroll-block .scroll-pointer div {
+body .scroll-block .scroll-pointer .pointer {
   width: 60px;
   border-bottom: 5px solid #b0b8b9;
   margin-left: 10px;
@@ -1148,10 +1160,10 @@ body .why-modus .happy-clients .scroller .client {
   }
 }
 @media (max-width: 605px) {
-  body .scroll-block .scroll-data .scroll-item .text {
+  body .scroll-block .scroller .scroll-data .scroll-item .text {
     width: 70%;
   }
-  body .scroll-block .scroll-data .scroll-item .title {
+  body .scroll-block .scroller .scroll-data .scroll-item .title {
     font-size: 40px;
   }
   body .services-block .top-services .title {
