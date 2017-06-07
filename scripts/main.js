@@ -33,6 +33,13 @@ $(document).ready(function(){
 		})
 		highlightScroll(positionOfScroller * -1)
 	})
+
+	$( '.pointer' ).click(function(){
+		pointerIndex = $(this).index()
+		setSizes(pointerIndex * -1)
+		highlightScroll(pointerIndex)
+		positionOfScroller = pointerIndex * -1
+	})
 });
 //////////////// functions
 function highlightScroll(pos) {
@@ -59,13 +66,13 @@ function setSizes(pos) {
 function addScrollIndicators() {
 	var scrollItemsNumber = $( '.scroller .scroll-data' ).length;
 	for (var i = 0; i < scrollItemsNumber; i++) {
-		$('.scroll-pointer').append("<div class='pointer'></div>")
+		$( '.scroll-pointer' ).append("<div class='pointer'></div>")
 	}
 }
 
 // function taggingScrollItems() {
-// 	var scrollItemsArray = $( '.scroller .scroll-data' )
-// 	for (var i = 0; i < scrollItemsArray.length; i++) {
-// 		scrollItemsArray[i]
+// 	var scrollIndicatorsArray = $( '.scroll-pointer .pointer' )
+// 	for (var i = 0; i < scrollIndicatorsArray.length; i++) {
+// 		scrollIndicatorsArray[i]
 // 	}
 // }
