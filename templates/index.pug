@@ -17,14 +17,42 @@ html
 					div.nav-wrapper
 						div.hidden-menu menu
 						div.nav
-							div.home home
-							div.about about
-							div.services services
-							div.portfolio portfolio
-							div.blog blog
-							div.features features
-							div.contacts contacts
-							div.search
+							ul
+								li.home
+									a(href='#')
+										span home
+								li
+									a(href='#')
+										span about
+								li
+									a(href='#')
+										span services
+								li.has-sub
+									a(href='#')
+										div.rotate >
+										span portfolio
+									ul
+										li
+											a(href='#')
+												span > Portfolio 2 column page
+										li
+											a(href='#')
+												span > Portfolio 2 column page
+										li
+											a(href='#')
+												span > Portfolio 2 column page
+								li
+									a(href='#')
+										span blog
+								li
+									a(href='#')
+										span features
+								li
+									a(href='#')
+										span contacts
+								li
+									a(href='#')
+										img(src="../images/search.png")
 			div.header-ruller
 		div.scroll-block
 			div.scroll-left &#171
@@ -116,17 +144,17 @@ html
 					div.counters-block
 						div.text Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a href="www.ya.ru">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
 						div.counters
-							div.suspendisse
-								div.image
+							div
+								div.chart(data-percent="50" data-rotate="-90")
 								div.title suspendisse
-							div.maecenas
-								div.image
+							div
+								div.chart(data-percent="70" data-rotate="-90")
 								div.title maecenas
-							div.aliquam
-								div.image
+							div
+								div.chart(data-percent="80" data-rotate="-90")
 								div.title aliquam
-							div.habitasse
-								div.image
+							div
+								div.chart(data-percent="100" data-rotate="-90")
 								div.title habitasse
 					div.what-client-say
 						div.title What Client’s Say ?

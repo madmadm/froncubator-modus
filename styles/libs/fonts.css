@@ -99,10 +99,10 @@
 			font-weight: normal;
 	}
 
-	@font-face {
-			font-family: "FontAwesome";
-			src: url("../fonts/FontAwesome/FontAwesome.eot");
-			src: url("../fonts/FontAwesome/FontAwesome.eot?#iefix")format("embedded-opentype"),
-			font-style: normal;
-			font-weight: normal;
-	}
+	// @font-face {
+	// 		font-family: "FontAwesome";
+	// 		src: url("../fonts/FontAwesome/FontAwesome.eot");
+	// 		src: url("../fonts/FontAwesome/FontAwesome.eot?#iefix")format("embedded-opentype"),
+	// 		font-style: normal;
+	// 		font-weight: normal;
+	// }

@@ -374,23 +374,9 @@ body
 						flex-wrap wrap
 						div
 							margin-left 5px
-							.image
-								width 120px
-								height 59px
+							height auto
 							.title
 								text-align center
-						.suspendisse
-							.image
-								background url('../images/susp-50.png') center no-repeat
-						.maecenas
-							.image
-								background url('../images/maecenas-70.png') center no-repeat
-						.aliquam
-							.image
-								background url('../images/aliquam-80.png') center no-repeat
-						.habitasse
-							.image
-								background url('../images/habit-100.png') center no-repeat
 				.what-client-say
 					width 21%
 					.title
@@ -483,11 +469,12 @@ body
 					left 0px
 					top 0px
 					margin 0 auto
-					display flex
-					flex-direction row
-					justify-content space-between
+					// display flex
+					// flex-direction row
+					// justify-content space-between
 					.client
-						flex 0 1 170px
+						display inline-block
+						// flex 0 1 170px
 						width 170px
 						height 90px
 						margin-right 10px

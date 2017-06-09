@@ -1,13 +1,18 @@
 $(document).ready(function(){
 
 	var positionOfBotScroller = 0
+	var botScrollItemsNumber = $( '.happy-clients .scroll-bottom .scroller' ).children().length
+	/////Width of scroller = summ width of all clients + margins
+	var sum = 0
+	var margin = parseInt($($( '.happy-clients .scroll-bottom .scroller' ).children()[0]).css("margin-right"))
+	for (var i = 0; i < botScrollItemsNumber; i++) {
+		sum += $($( '.happy-clients .scroll-bottom .scroller' ).children()[i]).width()
+	}
+	$( '.happy-clients .scroll-bottom .scroller' ).css({
+		width: sum + margin * botScrollItemsNumber
+	})
 	
-
 	////////////// listeners
-
-	// $( window ).resize(function() {
-	// 	setSizes(positionOfBotScroller)
-	// })
 
 	$( '.happy-clients .buttons .right' ).click(function(){
 		var clientsNumber = $( '.happy-clients .scroll-bottom .scroller' ).children().length

@@ -1,5 +1,22 @@
 middle-width = 80%
 
+@media (max-width: 1369px)
+	body
+		header
+			.header-bg
+				.content-wrapper
+					.nav-wrapper
+						.nav
+							font-size 11px
+							> ul > li
+								margin-left 0px
+								padding 5px 10px 5px 10px
+							.has-sub
+								ul
+									width 193px
+									left -8px
+									li
+										left 5px
 @media (max-width: 1325px)
 	body
 		header
@@ -12,10 +29,10 @@ middle-width = 80%
 							font-size 20px
 					.nav-wrapper
 						.nav
-							font-size 12px
-							div
+							// font-size 12px
+							> ul > li
 								margin-left 0px
-								padding 5px 10px 5px 10px
+								
 		.services-block
 			.top-services
 				.button
@@ -78,7 +95,10 @@ middle-width = 80%
 							font-size 15px
 					.nav-wrapper
 						.nav
-							font-size 11px
+							font-size 10px
+							.has-sub
+								ul
+									width 179px
 		.services-block
 			.top-services
 				.button
@@ -102,24 +122,33 @@ middle-width = 80%
 			.header-bg
 				.content-wrapper
 					.nav-wrapper
-						width 30%
+						width 75px
 						position relative
 						.hidden-menu
 							display block
-							right 0px
+							// right 0px
 						&:hover .nav
 							display flex
 							cursor pointer
 						.nav
 							display none
 							position absolute
-							top 57px
-							right -9px
-							flex-direction column
-							height 197px
+							width 88px
+							right 27px
+							// height 197px
 							z-index 10
-							> div
-								padding 3px 10px 3px 10px
+							.has-sub
+								ul
+									top -16px
+									left -187px
+									&:before
+										top 6px
+										left 178px
+										border-top 7px solid transparent
+										border-bottom 7px solid transparent
+										border-left 7px solid #e2534b
+								li
+									left 7px
 		.services-block
 			.top-services
 				width middle-width
@@ -248,15 +277,19 @@ middle-width = 80%
 						width 200px
 						margin-right 30px
 						margin-bottom 30px
+						order 1
 						.title
 							font-size 14px
 						.list
 							font-size 12px
 					.counters-block
-						width 262px
+						width 100%
+						margin-bottom 30px
+						order 3
 					.what-client-say
-						width 360px
-						margin-top 30px
+						width 300px
+						margin-top 0px
+						order 2
 						.title
 							font-size 14px
 						.text
