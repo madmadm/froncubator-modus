@@ -18,6 +18,7 @@ body footer .main-footer-info {
   width: 65%;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 35px;
   overflow: auto;
   height: auto;
   display: flex;
@@ -223,6 +224,7 @@ body header .header-bg {
 }
 body header .header-bg .content-wrapper {
   width: 65%;
+  min-width: 243px;
   margin: 0 auto;
 }
 body header .header-bg .content-wrapper .logo {
@@ -253,7 +255,7 @@ body header .header-bg .content-wrapper .nav-wrapper .hidden-menu {
   display: none;
   position: absolute;
   top: 26px;
-  right: 20px;
+  right: 0px;
   font-family: OpenSans-Semibold;
   font-size: 13px;
   text-transform: uppercase;
@@ -274,22 +276,104 @@ body header .header-bg .content-wrapper .nav-wrapper .hidden-menu:hover {
 }
 body header .header-bg .content-wrapper .nav-wrapper .nav {
   float: right;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   font-family: OpenSans-Semibold;
   font-size: 13px;
-  height: 80px;
-  align-items: center;
+  margin-top: 27px;
 }
-body header .header-bg .content-wrapper .nav-wrapper .nav div {
+body header .header-bg .content-wrapper .nav-wrapper .nav ul,
+body header .header-bg .content-wrapper .nav-wrapper .nav li,
+body header .header-bg .content-wrapper .nav-wrapper .nav span,
+body header .header-bg .content-wrapper .nav-wrapper .nav a {
+  position: relative;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav a {
+  text-decoration: none;
+  color: #fff;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub {
+  z-index: 10;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub .rotate {
+  display: inline-block;
+  margin-right: 5px;
+/* Safari */
+  -webkit-transform: rotate(90deg);
+/* Firefox */
+  -moz-transform: rotate(90deg);
+/* IE */
+  -ms-transform: rotate(90deg);
+/* Opera */
+  -o-transform: rotate(90deg);
+/* Internet Explorer */
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub:hover > ul {
+  display: block;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 227px;
+  top: 100%;
+  left: 0px;
+  background-color: #e2534b;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul li {
+  background-color: #e8645a;
+  left: 7px;
+  margin-bottom: 5px;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul li:hover {
+  background-color: #76c7c0;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul:before {
+  content: " ";
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #e2534b;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub:after {
+  content: " ";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 21px;
+  background: transparent;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav ul > li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav ul > li:hover {
+  background-color: #e8645a;
+  cursor: pointer;
+}
+body header .header-bg .content-wrapper .nav-wrapper .nav > ul > li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  list-style: none;
   text-transform: uppercase;
   color: #fff;
   margin-left: 15px;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
 }
-body header .header-bg .content-wrapper .nav-wrapper .nav div:hover {
+body header .header-bg .content-wrapper .nav-wrapper .nav > ul > li:hover {
   background-color: #e8645a;
   -webkit-box-shadow: 0px 3px 0px 0px #e2534b;
   -moz-box-shadow: 0px 3px 0px 0px #e2534b;
@@ -303,7 +387,6 @@ body header .header-bg .content-wrapper .nav-wrapper .nav .home {
   box-shadow: 0px 3px 0px 0px #528b86;
 }
 body header .header-bg .content-wrapper .nav-wrapper .nav .search {
-  background: url("../images/search.png") center no-repeat;
   width: 20px;
   height: 18px;
 }
@@ -421,6 +504,7 @@ body .scroll-block .scroll-pointer .pointer {
   width: 60px;
   border-bottom: 5px solid #b0b8b9;
   margin-left: 10px;
+  cursor: pointer;
 }
 body .services-block {
   width: 100%;
@@ -741,25 +825,10 @@ body .why-modus .metric .why-us-wrapper .counters-block .counters {
 }
 body .why-modus .metric .why-us-wrapper .counters-block .counters div {
   margin-left: 5px;
-}
-body .why-modus .metric .why-us-wrapper .counters-block .counters div .image {
-  width: 120px;
-  height: 59px;
+  height: auto;
 }
 body .why-modus .metric .why-us-wrapper .counters-block .counters div .title {
   text-align: center;
-}
-body .why-modus .metric .why-us-wrapper .counters-block .counters .suspendisse .image {
-  background: url("../images/susp-50.png") center no-repeat;
-}
-body .why-modus .metric .why-us-wrapper .counters-block .counters .maecenas .image {
-  background: url("../images/maecenas-70.png") center no-repeat;
-}
-body .why-modus .metric .why-us-wrapper .counters-block .counters .aliquam .image {
-  background: url("../images/aliquam-80.png") center no-repeat;
-}
-body .why-modus .metric .why-us-wrapper .counters-block .counters .habitasse .image {
-  background: url("../images/habit-100.png") center no-repeat;
 }
 body .why-modus .metric .why-us-wrapper .what-client-say {
   width: 21%;
@@ -787,7 +856,7 @@ body .why-modus .metric .why-us-wrapper .what-client-say .signature {
 }
 body .why-modus .happy-clients {
   width: 100%;
-  height: 235px;
+  height: auto;
   background-color: #f3f3f3;
 }
 body .why-modus .happy-clients .header {
@@ -855,20 +924,42 @@ body .why-modus .happy-clients .header .buttons div:hover {
   box-shadow: 0px 3px 0px 0px #e2534b;
   cursor: pointer;
 }
-body .why-modus .happy-clients .scroller {
+body .why-modus .happy-clients .scroll-bottom {
+  position: relative;
   width: 65%;
+  height: 120px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 30px;
+  overflow: hidden;
 }
-body .why-modus .happy-clients .scroller .client {
-  flex: 0 1 170px;
+body .why-modus .happy-clients .scroll-bottom .scroller {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0 auto;
+}
+body .why-modus .happy-clients .scroll-bottom .scroller .client {
+  display: inline-block;
   width: 170px;
   height: 90px;
   margin-right: 10px;
   background: #fff url("../images/jquery.png") center no-repeat;
+}
+@media (max-width: 1369px) {
+  body header .header-bg .content-wrapper .nav-wrapper .nav {
+    font-size: 11px;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav > ul > li {
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul {
+    width: 193px;
+    left: -8px;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul li {
+    left: 5px;
+  }
 }
 @media (max-width: 1325px) {
   body header .header-bg .content-wrapper .logo .modus {
@@ -877,12 +968,8 @@ body .why-modus .happy-clients .scroller .client {
   body header .header-bg .content-wrapper .logo .versus {
     font-size: 20px;
   }
-  body header .header-bg .content-wrapper .nav-wrapper .nav {
-    font-size: 12px;
-  }
-  body header .header-bg .content-wrapper .nav-wrapper .nav div {
+  body header .header-bg .content-wrapper .nav-wrapper .nav > ul > li {
     margin-left: 0px;
-    padding: 5px 10px 5px 10px;
   }
   body .services-block .top-services .button {
     font-size: 15px;
@@ -945,7 +1032,10 @@ body .why-modus .happy-clients .scroller .client {
     font-size: 15px;
   }
   body header .header-bg .content-wrapper .nav-wrapper .nav {
-    font-size: 11px;
+    font-size: 10px;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul {
+    width: 179px;
   }
   body .services-block .top-services .button {
     padding: 8px 20px 8px 20px;
@@ -962,12 +1052,11 @@ body .why-modus .happy-clients .scroller .client {
 }
 @media (max-width: 960px) {
   body header .header-bg .content-wrapper .nav-wrapper {
-    width: 30%;
+    width: 75px;
     position: relative;
   }
   body header .header-bg .content-wrapper .nav-wrapper .hidden-menu {
     display: block;
-    right: 0px;
   }
   body header .header-bg .content-wrapper .nav-wrapper:hover .nav {
     display: flex;
@@ -976,13 +1065,23 @@ body .why-modus .happy-clients .scroller .client {
   body header .header-bg .content-wrapper .nav-wrapper .nav {
     display: none;
     position: absolute;
-    top: 57px;
-    right: -9px;
-    flex-direction: column;
-    height: 197px;
+    width: 88px;
+    right: 27px;
+    z-index: 10;
   }
-  body header .header-bg .content-wrapper .nav-wrapper .nav > div {
-    padding: 3px 10px 3px 10px;
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul {
+    top: -16px;
+    left: -187px;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub ul:before {
+    top: 6px;
+    left: 178px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #e2534b;
+  }
+  body header .header-bg .content-wrapper .nav-wrapper .nav .has-sub li {
+    left: 7px;
   }
   body .services-block .top-services {
     width: 80%;
@@ -1138,6 +1237,7 @@ body .why-modus .happy-clients .scroller .client {
     width: 200px;
     margin-right: 30px;
     margin-bottom: 30px;
+    order: 1;
   }
   body .why-modus .metric .why-us-wrapper .why-choose-us .title {
     font-size: 14px;
@@ -1146,11 +1246,14 @@ body .why-modus .happy-clients .scroller .client {
     font-size: 12px;
   }
   body .why-modus .metric .why-us-wrapper .counters-block {
-    width: 262px;
+    width: 100%;
+    margin-bottom: 30px;
+    order: 3;
   }
   body .why-modus .metric .why-us-wrapper .what-client-say {
-    width: 360px;
-    margin-top: 30px;
+    width: 300px;
+    margin-top: 0px;
+    order: 2;
   }
   body .why-modus .metric .why-us-wrapper .what-client-say .title {
     font-size: 14px;
@@ -1206,6 +1309,7 @@ body .why-modus .happy-clients .scroller .client {
     width: 88%;
     flex-wrap: wrap;
     order: 4;
+    margin-top: 15px;
   }
   body footer .main-footer-info .logo-text-contacts .text {
     margin-bottom: 0px;
@@ -1270,4 +1374,27 @@ body .why-modus .happy-clients .scroller .client {
   body header .header-bg .content-wrapper .nav-wrapper .hidden-menu {
     right: 0px;
   }
+}
+.chart {
+  position: relative;
+  margin: 10px;
+  width: 122px;
+  height: 70px;
+}
+.chart canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chart span {
+  color: #555;
+  display: block;
+  line-height: 110px;
+  text-align: center;
+  width: 120px;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 5px;
 }
